@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompeteBoard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #1e1e1e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1e90ff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5em;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .blocks {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .block {
+            background-color: #252525;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .block h3 {
+            color: #1e90ff;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .block p {
+            font-size: 1.1em;
+            color: #aaaaaa;
+        }
+
+        .block:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #1e1e1e;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>CompeteBoard</h1>
+        <p>Coding Dashboard</p>
+    </header>
+    
+    <section class="content">
+        <h2>About CompeteBoard</h2>
+        <p>CompeteBoard is a comprehensive coding dashboard designed for competitive programmers. It helps users track and improve their performance across top coding platforms like Codeforces, CodeChef, and LeetCode. This platform centralizes your coding profiles, allowing you to easily monitor your progress, compare rankings, and set goals. With real-time data updates, you can focus on sharpening your skills and preparing for coding contests efficiently.</p>
+
+        <div class="blocks">
+            <div class="block">
+                <h3>Codeforces</h3>
+                <p>Codeforces is known for its rigorous contests and vibrant community. It provides a platform where competitive programmers can take part in rated contests, solve problems, and improve their algorithmic skills. CompeteBoard allows you to track your Codeforces ranking and problem-solving stats in real-time.</p>
+            </div>
+            
+            <div class="block">
+                <h3>CodeChef</h3>
+                <p>CodeChef hosts monthly contests that challenge coders to solve complex problems. With CompeteBoard, you can keep track of your CodeChef performance, monitor your long and short contest rankings, and stay updated with your problem-solving history.</p>
+            </div>
+            
+            <div class="block">
+                <h3>LeetCode</h3>
+                <p>LeetCode is the go-to platform for interview preparation and competitive coding practice. On CompeteBoard, you can view your LeetCode progress, track problem-solving streaks, and compare your stats with other users to keep pushing towards mastery.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CompeteBoard. All rights reserved.</p>
+    </footer>
+</body>
+</html>

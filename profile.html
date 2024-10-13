@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Data - Coding Dashboard API</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="login.html">Log out</a></li>
+            <li><a href="update-handles.html">Update Handles</a></li>
+            <li></li>
+        </ul>
+    </nav>
+    <h1>CompeteBoard</h1>
+
+    <!-- <button id="getProfilesButton">Get Profiles Data</button> -->
+    <!-- <div ></div> -->
+    <div class="container" id="getProfilesButton">
+        <h2>Performance</h2>
+        
+        <div class="chart-container">
+            <div class="chart-item">
+                <h3>Codeforces rating progression</h3>
+                <canvas id="ratingProgression" width="400" height="200"></canvas>
+            </div>
+            <div class="graph2">
+                
+                <div class="chart-item">
+                    <!-- <canvas id="ratingProgression" width="400" height="200"></canvas> -->
+                     <h3>Verdict Distribution</h3>
+                    <canvas id="verdictDistribution" width="400" height="200"></canvas>
+                </div>
+                <div class="chart-item">
+                    <h3>Problem solved chart with rating</h3>
+                    <canvas id="problemSolvedChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="graph2">
+            <div class="chart-item">
+                <h3>Solved Problem Tags Distribution</h3>
+                <canvas id="tagsDistribution" width="400" height="200"></canvas>
+            </div>
+            <div class="chart-item">
+                <h3>leetcode Submissions Chart</h3>
+                <canvas id="leetcodeSubmissionsChart" width="400" height="200"></canvas>
+            </div>
+            </div>
+            <div class="chart-item">
+                <h3>codechef Rating Chart</h3>
+                <canvas id="codechefRatingChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
